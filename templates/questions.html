@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} {{title}} {% endblock %}
+
+{% block body %}
+<div class="col-auto">
+    <h1>Prompts for the {{title}}</h1>
+
+    <form action="/story-generator">
+        {% for prompt in prompts %}
+        <div class="mb-2 row">
+            <label class="col-sm-1 col-form-label">{{prompt}}:</label>
+            <div class="col-sm-5">
+                <input class="form-control" name="{{prompt}}" required>
+            </div>
+        </div>
+        {% endfor %}
+        <input type="hidden" name="story_id" value="{{ story_id}}">
+        <button>Generate Story!</button>
+    </form>
+</div>
+{% endblock %}
