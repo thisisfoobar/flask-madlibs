@@ -59,7 +59,7 @@ action = Story(
 silly = Story(
         "silly",
         "Silly Story",
-        ["name", "place", "verb", "adjective"],
+        ["name", "adjective", "food", "noun","verb"],
         """{name} was a silly person.  They liked to eat {adjective} {food}.  Their favorite
         place to eat was on top of {noun}.  They would eat it while {verb}!  How silly.""")
 
