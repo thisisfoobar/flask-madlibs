@@ -50,7 +50,7 @@ basic = Story(
 action = Story(
     "action",
     "Action Story",
-    ["place","noun","verb","adjective","name"],
+    ["place","verb","adjective","name"],
     """A long time ago in {place}, there lived a person named {name}.
     It was here that {name} was a secret spy.  They were trained to {verb} in a very
     {adjective} manner."""
